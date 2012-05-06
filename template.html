@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Newsletter da Caelum</title>
+
+	<!-- HACK: *copie* pra cá os estilos que precisam ser preservados no head após o inline -->
+	<style-preserve style="display: none">
+		body, center {
+			font-family: Arial, Verdana, sans-serif;
+			font-size: 14px;
+			width:100%;
+		}
+		body {
+			text-align: center;
+			width:100% !important;
+		}
+
+		/* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
+		img[src^="http"] {
+			background: transparent;	
+		}
+	</style-preserve>
+
+	<style type="text/css">
+		body, center {
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+
+			background: #ffffff;
+			font-family: Arial, Verdana, sans-serif;
+			font-size: 14px;
+			width:100%;
+		}
+		body {
+			text-align: center;
+			width:100% !important;
+		}
+
+		/* android resize font fix: http://www.emailonacid.com/blog/details/C18/override_the_font_resizing_on_the_android */
+		div, p, a { -webkit-text-size-adjust:none; }
+
+		/* estrutura */
+		#principal {
+			max-width: 550px; 
+			text-align: left;
+			width: 94%; 
+		}
+
+		#pagina, #unsub {
+			font-size: 11px;
+		}
+		#pagina, #unsub {
+			color: #555555;
+		}
+		#pagina a, #unsub a {
+			color: #2b4e72;
+		}
+
+		#logo {
+			margin: 0;
+			padding: 0;
+		}
+		#logo img {
+			background: white;
+			color: black;
+			vertical-align: middle;
+		}
+		#logo td {
+			background-image: url(https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/noise.png);
+
+			        -o-border-top-right-radius: 5px;
+			     -o-border-bottom-right-radius: 5px;
+			      -moz-border-top-right-radius: 5px;
+			   -moz-border-bottom-right-radius: 5px;
+			   -webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			           border-top-right-radius: 5px;
+			        border-bottom-right-radius: 5px;
+		}
+
+		/* preco */
+		#preco {
+			padding-bottom: 15px;
+			padding-top: 15px;
+		}
+		#preco a {
+			color: white;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		#preco .valor {
+			font-size: 18px;
+			color: #025092;
+		}
+		#preco .ja {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		/* blocos de texto e titulos */
+		.destaque {
+			color: #025092;
+		}
+		.h3 {
+			font-size: 16px;
+			font-weight: bold;	
+		}
+		.txt {
+			padding-bottom:15px;
+			padding-top:15px;
+		}
+		.txt p:first-child {
+			margin-top: 0;
+		}
+		.txt p:last-child {
+			margin-bottom: 0;
+		}
+
+		/* frescuras nas caixas cinzas */
+		.box {
+			background-image: url(https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/noise.png);
+		}
+		.box td:first-child { 
+			        -o-border-top-left-radius: 5px;
+			     -o-border-bottom-left-radius: 5px;
+			      -moz-border-top-left-radius: 5px;
+			   -moz-border-bottom-left-radius: 5px;
+			   -webkit-border-top-left-radius: 5px;
+			-webkit-border-bottom-left-radius: 5px;
+			           border-top-left-radius: 5px;
+			        border-bottom-left-radius: 5px;
+		}
+		.box td:last-child { 
+			        -o-border-top-right-radius: 5px;
+			     -o-border-bottom-right-radius: 5px;
+			      -moz-border-top-right-radius: 5px;
+			   -moz-border-bottom-right-radius: 5px;
+			   -webkit-border-top-right-radius: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			           border-top-right-radius: 5px;
+			        border-bottom-right-radius: 5px;
+		}
+
+		.empresas {
+			max-height: 203px;
+		}
+
+		/* palestrantes */
+		.fotos td {
+			padding-left: 4%;
+			padding-bottom: 3%;
+		}
+		.fotos img {
+			margin-bottom: 10px;
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+		.palestrante {
+			color: #333333;
+			display: block;
+			display: inline-block;
+			margin-bottom: 10px;
+			text-decoration: none;
+			width: 110px;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+
+<!-- estrutura -->
+<center><div id="principal">
+
+<!-- subject snippet -->
+<div style="display: none; color: #FFFFFF; font-size: 1px; height: 0; visibility: hidden;">
+	Aproveite o preço promocional do QCon
+</div>
+
+<!-- tabela principal -->
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="100%">
+	<!-- Outlook fix: cria uma tabela de 450px aqui dentro -->
+	<!--[if (gte mso 9) | (lt IE 8)]>
+		<table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" width="450"><tr><td>
+	<![endif]-->
+
+	<!-- link navegador -->
+	<tr id="pagina" bgcolor="#ffffff">
+		<td colspan="3" align="center" height="25" valign="middle">
+			Problemas para visualizar o email? <a href="http://qconsp.com">Visite o site do QCon</a>.
+		</td>
+	</tr>
+
+	<!-- faixa topo + logo -->
+	<tr id="logo">
+		<td bgcolor="#025092" valign="middle" align="left" colspan="3">
+			<a href="http://qconsp.com">
+				<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/qcon.png" alt=" QCon SP 2012" width="239" height="80" border="0" class="qcon">
+			</a>
+		</td>
+	</tr>
+	
+	<!-- espaço --><tr><td height="18" bgcolor="#ffffff"></td></tr>
+
+	<!-- noticias -->
+	<tr bgcolor="#f0f0f0" class="box">
+		<td width="3%"></td>
+		<td class="txt">
+			<p class="h3">QCon São Paulo: 2 dias, mais de 40 palestras de alto nível!</p>
+
+			<p>A <a href="http://www.caelum.com.br">Caelum</a> e o <a href="http://infoq.com/br">InfoQ</a> organizam pela terceira vez o principal evento de arquitetos e desenvolvedores do mundo.</p>
+
+			<p>O QCon SP traz, <b>dias 4 e 5 de agosto</b>, ícones internacionais e nacionais de diversas áreas, com apresentações de alto nível técnico.</p>
+
+			<p>O QCon aborda não apenas uma única tecnologia ou aspecto: passa por Arquitetura, Linguagens Funcionais, Mobile, Agile, Práticas de Engenharia Ágil e outros.</p>
+
+			<p class="destaque h3">Destaques:</p>
+
+			<table cellpadding="0" cellspacing="0" border="0" class="fotos" width="100%">
+				<tr>
+					<td>
+						<a href="http://qconsp.com/palestrante/martin-fowler">
+							<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/fowler.jpg" width="80" height="80" alt="Martin Fowler">
+						</a>
+						<a href="http://qconsp.com/palestrante/martin-fowler" class="palestrante">
+							Martin Fowler, <b>Thoughtworks</b>
+						</a>
+					</td>
+					<td>
+						<a href="http://qconsp.com/palestrante/zach-holman">
+							<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/zach.jpg" width="80" height="80" alt="Zach Holman">
+						</a>
+						<a href="http://qconsp.com/palestrante/zach-holman" class="palestrante">
+							Zach Holman, <b>Github</b>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="http://qconsp.com/palestrante/ben-christensen">
+							<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/ben.jpg" width="80" height="80" alt="Ben Christensen">
+						</a>
+						<a href="http://qconsp.com/palestrante/ben-christensen" class="palestrante">
+							Ben Christensen, <b>Netflix</b>
+						</a>
+					</td>
+					<td>
+						<a href="http://qconsp.com/palestrante/rodrigo-schmidt">
+							<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/rodrigo.jpg" width="80" height="80" alt="Rodrigo Schmidt">
+						</a>
+						<a href="http://qconsp.com/palestrante/rodrigo-schmidt" class="palestrante">
+							Rodrigo Schmidt, <b>Facebook</b>
+						</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="3%"></td>
+	</tr>
+
+	<!-- espaço --><tr><td height="18" bgcolor="#ffffff" colspan="3"></td></tr>
+
+	<tr bgcolor="#84bb3b">
+		<td width="5%"></td>
+		<td id="preco" align="center">
+			<a href="http://qconsp.com/inscricoes">
+				<div class="chamada">Aproveite o valor promocional com 40% de desconto!</div>
+				<div class="valor">Inscrição a R$ 549 só até dia 9 de maio. <span class="ja">Inscreva-se já!</span></div>
+			</a>
+		</td>
+		<td width="5%"></td>
+	</tr>
+
+	<!-- espaço --><tr><td height="18" bgcolor="#ffffff" colspan="3"></td></tr>
+
+	<tr bgcolor="#f0f0f0" class="box">
+		<td width="3%"></td>
+		<td class="txt">
+			<p class="destaque h3">Mais destaques:</p>
+
+			<ul>
+				<li><b>Tom Soderstrom</b>, CTO do Jet Propulsion Laboratory da <b>Nasa</b>.</li>
+				<li><b>John Esser</b>, líder de desenvolvimento no <b>Ancestry.com</b>.</li>
+				<li><b>José Valim</b>, líder técnico da <b>plataformatec</b> e um dos principais committers do <b>Rails</b>.</li>
+				<li><b>Fabrício Sanchez</b>, especialista de desenvolvimento web na <b>Microsoft</b>.</li>
+			</ul>
+		</td>
+		<td width="3%"></td>
+	</tr>
+
+	<tr>
+		<td align="center" colspan="3">
+			<img src="https://s3.amazonaws.com/caelum.com.br/newsletter/qcon2012/empresas.jpg" width="100%" border="0" class="empresas">
+		</td>
+	</tr>
+
+	
+	<!-- espaço --><tr><td height="30" bgcolor="#ffffff" colspan="3"></td></tr>
+
+	<!-- links de baixo -->
+	<!--
+		TODO
+		inserir rodapé com informacoes do infoq, qcon, links, unsubscribe etc
+	-->
+
+
+	<!-- Outlook fix: cria uma tabela de 450px aqui dentro -->
+	<!--[if (gte mso 9) | (lt IE 8)]>
+		</td></tr></table>
+	<![endif]-->
+
+</table></div></center>
+<a href="*|UNSUB|*">Remove me from this list</a>
+</body>
+</html>
