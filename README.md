@@ -4,6 +4,7 @@ The original source file is `template.html`. To build (and inline styles etc), r
 
 Build dependencies: **premailer** and **htmlcompressor**.
 
+You can see the final result [here](http://sergiolopes.github.com/newsletter-qcon-2012/newsletter.html "Newsletter demo").
 
 -----------------------
 
@@ -12,6 +13,8 @@ Build dependencies: **premailer** and **htmlcompressor**.
 O código fonte original está no `template.html`. Para buildar, use o script `gera.sh`. O resultado final compilado está no `newsletter.html`.
 
 Dependências para o build: **premailer** e **htmlcompressor**
+
+Você pode ver o resultado final [aqui](http://sergiolopes.github.com/newsletter-qcon-2012/newsletter.html "Newsletter demo").
 
 ### Mais sobre emails e newsletters responsivas:
 
